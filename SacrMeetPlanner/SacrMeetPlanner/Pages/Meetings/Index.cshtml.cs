@@ -21,7 +21,7 @@ namespace SacrMeetPlanner.Pages.Meetings
 
         public IList<Meeting> Meeting { get;set; }
 
-        //Eddie Pincay
+        // Eddie Pincay
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
         // Requires using Microsoft.AspNetCore.Mvc.Rendering;
