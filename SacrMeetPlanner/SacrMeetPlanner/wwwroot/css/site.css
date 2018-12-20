@@ -35,3 +35,11 @@ body {
         display: none;
     }
 }
+
+.image img {
+    width: 200px;
+    height: 150px;
+    padding: 0;
+    margin: 10px;
+    border: solid 4px #eea236;
+}
