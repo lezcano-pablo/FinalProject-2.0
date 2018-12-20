@@ -1,0 +1,118 @@
+﻿@page
+@model SacrMeetPlanner.Pages.Meetings.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Meeting</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.Conducting)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.Conducting)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.Presiding)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.Presiding)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.FirstHimnTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.FirstHimnTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.FirstHimnNum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.FirstHimnNum)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.FirstPrayer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.FirstPrayer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.Subject)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.Subject)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.Announcements)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.Announcements)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.FirstSpeaker)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.FirstSpeaker)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.SecondSpeaker)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.SecondSpeaker)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.SecondHimnTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.SecondHimnTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.SecondHimnNum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.SecondHimnNum)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.ThirdSpeaker)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.ThirdSpeaker)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.LastHimnTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.LastHimnTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.LastHimnNum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.LastHimnNum)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Meeting.LastPrayer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Meeting.LastPrayer)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Meeting.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

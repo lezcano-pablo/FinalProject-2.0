@@ -1,0 +1,92 @@
+﻿@page
+@model SacrMeetPlanner.Pages.Meetings.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Plan your Meeting</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].Conducting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].Presiding)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].FirstPrayer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].Subject)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].FirstSpeaker)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].SecondSpeaker)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].ThirdSpeaker)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].LastPrayer)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Meeting) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Conducting)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Presiding)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstPrayer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Subject)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstSpeaker)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SecondSpeaker)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.ThirdSpeaker)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.LastPrayer)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
