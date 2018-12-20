@@ -49,7 +49,7 @@ namespace SacrMeetPlanner.Pages.Meetings
             }
             Presidings = new SelectList(await presidQuery.Distinct().ToListAsync());
 
-            Meeting = await _context.Meeting.ToListAsync();
+            Meeting = await meetings.ToListAsync();
         }
     }
 }
