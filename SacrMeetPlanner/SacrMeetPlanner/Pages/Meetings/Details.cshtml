@@ -5,10 +5,9 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
+<h2>Meeting Details</h2>
 
 <div>
-    <h4>Meeting</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -109,7 +108,7 @@
         </dd>
     </dl>
 </div>
-<div>
+<div class="backToListLink">
     <a asp-page="./Edit" asp-route-id="@Model.Meeting.ID">Edit</a> |
     <a asp-page="./Index">Back to List</a>
 </div>

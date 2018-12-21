@@ -1,0 +1,138 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    padding: 0px 100px;
+    background: url(../images/sacrament.jpg) no-repeat;
+    background-size: cover;
+}
+p, label, input[type="submit"], a, address {
+    font-size: 1.3em;
+}
+ address a{
+     font-size: 1em;
+ }
+ h2{
+     margin-top: 60px;
+ }
+
+#twoColumns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    max-height: 100%;
+    width: 100%;
+}
+#first input, #second input {
+    width: 80%;
+}
+
+/* ANCHOR TAGS, SEARCH BUTTONS, SUBMIT BUTTONS, CREATE AND DELETE BUTTONS, SELECT AND RADIO BUTTONS */
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-shadow: 2px 1px 2px grey;
+    }
+
+input, select {
+    font-family: 'Montserrat', sans-serif;
+}
+
+    input[type=text], input[type=number], input[type=date], select {
+        font-size: 1.3em;
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit], #createButton {
+        width: 40%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #createButton {width: 80%;}
+    .backToListLink {margin-top: 20px; font-size: 1.3em;}
+
+        input[type=submit]:hover, #createButton:hover {
+            background-color: #45a049;
+            box-shadow: 1px 1px 5px black;
+        }
+
+        input[type=text]:hover, input[type=number]:hover, input[type=date]:hover, #createButton:hover, select:hover {
+            box-shadow: 2px 1px 5px black;
+        }
+
+    input[type=text]:focus {
+        background-color: #f4f8f9;
+    }
+
+        a:hover {
+            transition: transform .2s;
+            transform: scale(1.2, 1.2);
+        }
+
+#deleteButton {
+    background-color: #cc0000;
+}
+
+#warning {
+    color: #cc0000;
+    background: rgba(0,0,0,.1);
+    padding: 1em;
+    display:inline-block;
+}
+
+span {
+    color: red;
+    font-size: 1em;
+}
+/* TABLE STYLE */
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 1.3em;
+}
+
+.table tr:nth-child(even) {
+    background-color: #cccccc;
+}
+
+.table tbody tr:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+.table th {
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* DESCRIPTION TABLE STYLE*/
+dt {
+    padding-bottom: 5px;
+    font-size: 1.3em;
+}
+
+dd {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+    dd:nth-child(even) {
+        text-shadow: 0 0 1px black;
+    }

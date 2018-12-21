@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\EDDIE-LOGEX\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\EDDIE-LOGEX\\.nuget\\packages",
+      "C:\\Users\\Elías\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Elías\\.nuget\\packages",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }
